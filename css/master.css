@@ -1,0 +1,140 @@
+/*        */
+/* SMACSs */
+/*        */
+
+/* Base */
+body, html {  /* extend body container to whole page */
+  height: 100%;
+  margin: 0;
+}
+
+:root {
+  --box-size: 500px;
+  --box-border-size: 3px;
+  --red: 0;
+  --green: 0;
+  --blue: 0;
+}
+
+.maoarea {
+  width: var(--box-size);
+  height: var(--box-size);
+  border: var(--box-border-size) solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.maoarea .ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(var(--red), var(--green), var(--blue));
+  position: absolute;
+  left: auto;
+  top: auto;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/* Layout */
+ul.mr-auto li {  /* separate buttons on navbar */
+  padding-right: 10px;
+}
+
+#my_name {  /* highlight My Name */
+  font-family: 'Courier';
+  color: rgb(255, 120, 120);
+}
+
+#updateInfo {
+  position: absolute;
+  left: 0;
+  margin-left: 6.5%;
+  font-family: 'Arial';
+  font-style: italic;
+  font-size: 12px;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.maotron {  /* showcase (homepage) top-level layout */
+  color: white;
+  text-align: center;
+}
+
+.maotron2 {  /* for aligning items to each side */
+  color: white;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.rising_star {  /* animated background */
+  min-height: 100vh;
+  background-image: url('../images/background-image.jpg');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  animation: risingBackground 60s linear infinite;  /* the time here seems to be the key of smoothness */
+}
+@keyframes risingBackground {
+  from {
+    background-position: 0 0;  /* must use "background" otherwise text flow away with the background */
+  }
+  to {
+    background-position: 0px -2000px;
+  }
+}
+
+img.project {
+  border: 7px solid black;
+  border-radius: 7px;
+  width: auto;
+  height: 50vh;
+}
+
+iframe.project {
+  border: 7px solid black;
+  border-radius: 7px;
+  width: 40%;
+  height: 50vh;
+}
+
+img.personal {
+  width: 300px;
+  height: 300px;
+}
+
+#personal_left {
+  position: relative;
+  right: 50%;
+}
+
+#personal_right {
+  position: relative;
+  left: 50%;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/* Module */
+.copy_button.btn.btn-default {  /* copy button */
+  font-size: 0.5em;
+}
+.copy_button.btn-default.btn:hover {
+  background-color: #22dae0;
+  font-size: 0.5em;
+}
+
+.dropdown-menu #copy_email {  /* don't occupy the whole row */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.dropdown-menu #copy_phone {  /* <p> has extra margin than <a> on bottom */
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/*------------------------------------------------------------------------------*/

@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Character Encoding -->
+    <meta charset="utf-8">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Fontawesone Icons -->
+    <script src="https://kit.fontawesome.com/acd0a2e045.js"></script>
+    <!-- My css -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139406377-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-139406377-1');
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-text">
+      <!-- left section -->
+      <div class="navbar-collapse collapse w-100">  <!-- w-100 = flex item width=100% -->
+        <ul class="navbar-nav mr-auto">  <!-- mr-auto = push other items (so this item remains left) to right -->
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><span style="color: #ED6410"><i class="fas fa-home fa-lg"></i></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html"><span style="color: white"><i class="fas fa-brain fa-lg"></i></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="personal.html"><span style="color: Dodgerblue"><i class="fas fa-shoe-prints fa-lg"></i></span></a>
+          </li>
+        </ul>
+      </div>
+      <!-- middle section -->
+      <ul class="navbar-nav nav-item active dropdown"> <!-- active = highlighted while browsing the dropdown menu -->
+        <a class="nav-link dropdown-toggle btn btn-outline-secondary" style="border: 0"
+        id="navbarDropdown" data-toggle="dropdown">Contact Info</a>
+        <div class="dropdown-menu text-center">
+          <a id="copy_gmail" href="mailto:maomingchen0817@gmail.com">maomingchen0817@gmail.com</a>
+          <button class="btn btn-default btn-sm copy_button" data-toggle="tooltip" data-placement="right"
+          title="Copy to clipboard" onclick="copy_to_clipboard('gmail')">Copy</button>
+          <div class="dropdown-divider"></div>
+          <a id="copy_qq" href="mailto:444230567@qq.com">444230567@qq.com</a><br>
+          <button class="btn btn-default btn-sm copy_button" data-toggle="tooltip" data-placement="right"
+          title="Copy to clipboard" onclick="copy_to_clipboard('qq')">Copy</button>
+        </div>
+      </ul>
+      <!-- right section -->
+      <div class="navbar-collapse collapse w-100">
+        <ul class="navbar-nav ml-auto">  <!-- ml-auto = push other items (so this item remains right) to left -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/n33/">
+              <span style="color: Dodgerblue"><i class="fab fa-linkedin fa-lg"></i></span>
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link"></a></li>  <!-- for some reason the right icons are tighter than the left, so manually add some space in between -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/mmc-n33">
+              <span style="color: white"><i class="fab fa-github fa-lg"></i></span>
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link"></a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span style="color: #ED6410"><i class="fab fa-gitlab fa-lg"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Background -->
+    <div class="rising_star">
+        <br></br>
+        <div class="maotron">
+            <br>
+
+            <h1><span id="my_name">Mingchen Mao</span>'s Page</h1>
+            <p id="updateInfo">Last time update: 2019.10.06</p>
+            <p id="nothing">♌🉐🖼️🐗🗣️🉐👍👂&emsp;&emsp;🧍🐗🍎🈴🛐👎</p>&nbsp;
+            <div class="maoarea">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- My JS -->
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
